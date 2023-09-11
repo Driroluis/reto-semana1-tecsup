@@ -1,0 +1,94 @@
+:root {
+  --primary-text-color: #e6ecf1;
+  --primary-shadow-color: #888;
+  --primary-theme-color: #087ea4;
+  --secondary-text-color: #bbb;
+  --light-primary-shadow-color: rgba(0, 0, 0, 0.502);
+  --element-spacing: 16px;
+  --element-size: 16px;
+  --border-radius: 16px;
+}
+
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-image: url(https://gcdn.emol.cl/internet/files/2015/06/rl8vzy74mz9drpztjyyw.png);
+  background-size: cover;
+  background-position: center;
+  color: var(--primary-text-color);
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section1, .section2, .section3, .section4 {
+  max-width: 320px;
+  padding: 16px;
+  margin: 16px;
+  background-color: var(--light-primary-shadow-color);
+  backdrop-filter: blur(16px);
+  border-radius: var(--border-radius);
+  box-shadow:
+    0 0 4px 4px var(--primary-shadow-color);
+  text-align: center;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+img {
+  display: block;
+  border-radius: 150%;
+  box-shadow: 0 0 16px 0 rgba(255, 255, 255, 0.51);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h2,
+span {
+  color: var(--primary-text-color);
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+h2 {
+  color: #313030;
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+
+}
+
+.skill {
+  background-color: #087ea4;
+  padding: 4px 16px;
+  border-radius: var(--border-radius);
+}
+
+a {
+  font-size: calc(var(--element-size) * 1.25);
+  color: var(--primary-text-color);
+}
